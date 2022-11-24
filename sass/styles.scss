@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+.logo {
+    width: 100vw;
+    height: 65px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 155px;
+        height: 30px;
+        font-family: 'Shrikhand', cursive;
+        margin: 15px auto;
+    }
+}
+
