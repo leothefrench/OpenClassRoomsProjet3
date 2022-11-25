@@ -24,3 +24,25 @@ body {
 .header__arrow__left {
   padding-right: 0px;
 }
+
+.img-menu {
+  width: 100%;
+  height: 16rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  background-color: chartreuse;
+}
+.menu h2 {
+  margin: 0px;
+}
+
+.menu__entrees, .menu__plats, .menu__desserts {
+  background-color: darkcyan;
+  height: 65px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: rgb(251, 248, 247);
+}
