@@ -4,15 +4,23 @@ body {
   box-sizing: border-box;
 }
 
-/* LOGO */
-.logo {
-  height: 62px;
+/* HEADER */
+.header {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-.logo img {
+.header .header__logo {
+  height: 62px;
+  display: flex;
+}
+.header .header__logo img {
   width: 155px;
   height: 30px;
   font-family: "Shrikhand", cursive;
   margin: 15px auto;
+}
+
+.header__arrow__left {
+  padding-right: 0px;
 }
