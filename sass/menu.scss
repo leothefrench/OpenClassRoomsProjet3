@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* HEADER */
@@ -35,10 +36,10 @@ body {
 
 .menu {
     background-color: chartreuse;
-
-
+    
     h2 {
         margin: 0px;
+        font-family: 'Shrikhand', cursive;
     }
 }
 
@@ -46,6 +47,27 @@ body {
     background-color: darkcyan;
     height: 65px;
     width: 90%;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgb(251, 248, 247);
+    margin: auto;
+}
+
+h4 {
+    padding: 10px 10px 0px;
+    margin-bottom: 0px;
+    line-height: 20px;
+    color: #312d2d;
+
+}
+
+.menu__descriptif {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0px;
+
+    p {
+        margin: 0px;
+        color: rgb(132, 120, 120);
+    }
 }
