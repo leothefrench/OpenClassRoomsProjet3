@@ -126,13 +126,32 @@ h3 {
 
 /* *************** FOOTER *************** */
 .footer {
-  background-color: rgb(120, 111, 111);
+  background-color: rgb(68, 61, 61);
   color: white;
-  height: 1000px;
+  height: 150px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer__img {
-  height: 10px;
-  width: 20%;
+  height: 20px;
+  width: 30%;
   color: white;
+  margin-top: 15px;
+}
+
+.footer__fourchette, .footer__hands {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer__fourchette .footer__fourchette__icon-ustensile, .footer__hands .footer__fourchette__icon-ustensile {
+  margin-right: 12px;
+}
+.footer__fourchette .footer__hands__shake-hands, .footer__hands .footer__hands__shake-hands {
+  margin-right: 10px;
 }
