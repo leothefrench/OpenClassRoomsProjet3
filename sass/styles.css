@@ -10,6 +10,7 @@ body {
   height: 62px;
   display: flex;
   align-items: center;
+  margin: 4px 0px 4px 0px;
 }
 .logo img {
   width: 155px;
@@ -21,45 +22,81 @@ body {
 /* LOCATION */
 .location {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: rgb(172, 163, 163);
+  background-color: rgb(230, 227, 227);
+  border-top: 3px solid #cecece;
+}
+.location > p {
+  font-size: 15px;
+  margin: 14px 0px;
+  font-weight: bold;
+  color: #534f4f;
+}
+
+.fa-location-dot {
+  padding-left: 105px;
+  padding-right: 20px;
 }
 
 /* EXPLORATION */
+.exploration {
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .exploration__button {
-  width: 60%;
-  background-color: #9356DC;
+  background: linear-gradient(170deg, #ff79da, #9356dc);
   height: 50px;
   border-radius: 50px;
   margin: 0px auto;
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 2px 6px 2px #e3d5d5;
+  border: none;
 }
 
 /* *************** FONCTIONNEMENT **************** */
 .fonctionnement__choix-restaurant {
-  background-color: chocolate;
-  height: 80px;
+  height: 70px;
   width: 90%;
   margin: 0px auto;
   margin-bottom: 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 3px 7px 5px rgb(189, 192, 185);
 }
+.fonctionnement__choix-restaurant span {
+  background-color: #9356DC;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+.fonctionnement__choix-restaurant .fa-mobile-screen-button, .fonctionnement__choix-restaurant .fa-list-ul {
+  color: grey;
+}
+.fonctionnement__choix-restaurant .fa-store {
+  color: #9356DC;
+}
 
 /* *************** PARTIE RESTAURANT **************** */
 .restaurant {
+  display: flex;
+  flex-direction: column;
   margin-top: 100px;
+}
+.restaurant .restaurant__name {
+  width: 90%;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 h2 {
   padding-left: 20px;
   color: black;
-  width: 65%;
 }
 
 h3 {
@@ -67,17 +104,24 @@ h3 {
   color: rgb(16, 119, 30);
 }
 
-.restaurant__cadre-image {
-  width: 90%;
-  padding-left: 20px;
-}
-
 .restaurant__cadre-image__img {
   width: 100%;
-  height: 165px;
+  height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+}
+
+.restaurant__name__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: darkorange;
+}
+.restaurant__name__footer .fa-heart {
+  color: #9356DC;
 }
 
 /* *************** FOOTER *************** */
