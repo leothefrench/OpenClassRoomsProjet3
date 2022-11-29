@@ -10,43 +10,39 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* LOGO */
+/* ********** LOGO ********** */
 .logo {
-    height: 62px;
-    display: flex;
-    align-items: center;
-    margin: 4px 0px 4px 0px;
+    text-align: center;
 
     img {
-        width: 155px;
-        height: 30px;
-        font-family: 'Shrikhand', cursive;
-        margin: 15px auto;
+        width: 9rem;
+        height: 1.75rem;
+        font-family: "Shrikhand", cursive;
+        margin: 0.85rem auto;
     }
 }
 
-/* LOCATION */
+/* ********** LOCATION ********** */
 
 .location {
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(230, 227, 227);
+    background-color: rgb(240, 236, 236);   
     border-top: 3px solid #cecece;
 
-    &>p {
-        font-size: 15px;
-        margin: 14px 0px;
-        font-weight: bold;
+    p {
+        font-weight: 700;
         color: #534f4f;
+        margin-left: 1rem;
+    }
+
+    .fa-solid {
+        color: #403737;
     }
 }
 
-.fa-location-dot {
-    padding-left: 105px;
-    padding-right: 20px;
-}
-
-/* EXPLORATION */
+/* ********** EXPLORATION ********* */
 
 .exploration {
     height: 15rem;
@@ -65,126 +61,127 @@ body {
     }
 }
 
-.exploration__button {
-    background: linear-gradient(170deg, #ff79da, #9356dc);
-    height: 50px;
-    border-radius: 50px;
-    margin: 0px auto;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 2px 6px 2px #e3d5d5;
-    border: none;
-    padding: 0px 20px;
-}
+// .exploration__button {
+//     background: linear-gradient(170deg, #ff79da, #9356dc);
+//     height: 50px;
+//     border-radius: 50px;
+//     margin: 0px auto;
+//     color: #fff;
+//     font-size: 14px;
+//     font-weight: bold;
+//     box-shadow: 2px 6px 2px #e3d5d5;
+//     border: none;
+//     padding: 0px 20px;
+// }
 
 
 /* *************** FONCTIONNEMENT **************** */
 
-.choix-restaurant {
-    height: 70px;
-    width: 90%;
-    margin: 0px auto;
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 3px 7px 5px rgb(189, 192, 185);
+// .choix-restaurant {
+//     height: 70px;
+//     width: 90%;
+//     margin: 0px auto;
+//     margin-bottom: 0px;
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     margin-bottom: 20px;
+//     border-radius: 20px;
+//     box-shadow: 3px 7px 5px rgb(189, 192, 185);
 
-        span {
-            background-color: $primaire;
-            padding: 5px 10px;
-            border-radius: 25px;
-        }
+//         span {
+//             background-color: $primaire;
+//             padding: 5px 10px;
+//             border-radius: 25px;
+//         }
 
-        .fa-mobile-screen-button, .fa-list-ul {
-            color: grey;
-        }
+//         .fa-mobile-screen-button, .fa-list-ul {
+//             color: grey;
+//         }
 
-        .fa-store {
-            color: $primaire ;
-        }
-}
+//         .fa-store {
+//             color: $primaire ;
+//         }
+// }
 
 /* *************** PARTIE RESTAURANT **************** */
-.restaurant {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
+// .restaurant {
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 100px;
 
-    a {
-        text-decoration: none;
-    }
-    .restaurant__name {
-        width: 90%;
-        margin: 20px auto;
-    }
-}
+//     a {
+//         text-decoration: none;
+//     }
+//     .restaurant__name {
+//         width: 90%;
+//         margin: 20px auto;
+//     }
+// }
 
-h2 {
-    padding-left: 20px;
-    color: black;
-}
+// h2 {
+//     padding-left: 20px;
+//     color: black;
+// }
 
-h3 {
-    padding-left: 20px;
+// h3 {
+//     padding-left: 20px;
 
-}
+// }
 
-.restaurant__cadre-image__img {
-    width: 100%;
-    height: 11rem;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-.restaurant__name__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4.6rem;
-    border-radius: 0px 0px 20px 20px;
-    background-color: darkorange;
+// .restaurant__cadre-image__img {
+//     width: 100%;
+//     height: 11rem;
+//     object-fit: cover;
+//     border-radius: 20px 20px 0px 0px;
+// }
+// .restaurant__name__footer {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     height: 4.6rem;
+//     border-radius: 0px 0px 20px 20px;
+//     background-color: darkorange;
 
-    .fa-heart {
-        color: #9356DC;
-    }
-}
-.restaurant__name__footer__lieu {
-    color: black;
-}
+//     .fa-heart {
+//         color: #9356DC;
+//     }
+// }
+// .restaurant__name__footer__lieu {
+//     color: black;
+// }
 /* *************** FOOTER *************** */
 
-.footer {
-    background-color: rgb(60, 53, 53);
-    color: white;
-    height: 150px;
-    font-size: 14px;
-    font-weight: 500;
-    padding-left: 20px;
+// .footer {
+//     background-color: rgb(60, 53, 53);
+//     color: white;
+//     height: 150px;
+//     font-size: 14px;
+//     font-weight: 500;
+//     padding-left: 20px;
     
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: 1rem;
-    }
-}
-.footer__img {
-    height: 20px;
-    width: 30%;
-    color: white;
-    margin-top: 15px;
-}
+//     a {
+//         text-decoration: none;
+//         color: white;
+//         font-size: 1rem;
+//     }
 
-.footer__fourchette, .footer__hands {
-    display: flex;
-    justify-content: flex-start;
+//     .footer__img {
+//         height: 20px;
+//         width: 30%;
+//         color: white;
+//         margin-top: 15px;
+//     }
+// }
 
-    .footer__fourchette__icon-ustensile {
-        margin-right: 12px;
-    }
-    .footer__hands__shake-hands {
-        margin-right: 10px;
-    }
-}
+// .footer__fourchette, .footer__hands {
+//     display: flex;
+//     justify-content: flex-start;
+
+//     .footer__fourchette__icon-ustensile {
+//         margin-right: 12px;
+//     }
+//     .footer__hands__shake-hands {
+//         margin-right: 10px;
+//     }
+// }
