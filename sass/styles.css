@@ -68,7 +68,7 @@ body {
 }
 
 /* *************** FONCTIONNEMENT **************** */
-.fonctionnement__choix-restaurant {
+.choix-restaurant {
   height: 70px;
   width: 90%;
   margin: 0px auto;
@@ -80,15 +80,15 @@ body {
   border-radius: 20px;
   box-shadow: 3px 7px 5px rgb(189, 192, 185);
 }
-.fonctionnement__choix-restaurant span {
+.choix-restaurant span {
   background-color: #9356DC;
   padding: 5px 10px;
   border-radius: 25px;
 }
-.fonctionnement__choix-restaurant .fa-mobile-screen-button, .fonctionnement__choix-restaurant .fa-list-ul {
+.choix-restaurant .fa-mobile-screen-button, .choix-restaurant .fa-list-ul {
   color: grey;
 }
-.fonctionnement__choix-restaurant .fa-store {
+.choix-restaurant .fa-store {
   color: #9356DC;
 }
 
@@ -97,6 +97,9 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+}
+.restaurant a {
+  text-decoration: none;
 }
 .restaurant .restaurant__name {
   width: 90%;
@@ -110,7 +113,6 @@ h2 {
 
 h3 {
   padding-left: 20px;
-  color: rgb(16, 119, 30);
 }
 
 .restaurant__cadre-image__img {

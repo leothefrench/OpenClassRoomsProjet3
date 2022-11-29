@@ -66,7 +66,6 @@ body {
 }
 
 .exploration__button {
-    // width: 60%;
     background: linear-gradient(170deg, #ff79da, #9356dc);
     height: 50px;
     border-radius: 50px;
@@ -82,7 +81,7 @@ body {
 
 /* *************** FONCTIONNEMENT **************** */
 
-.fonctionnement__choix-restaurant {
+.choix-restaurant {
     height: 70px;
     width: 90%;
     margin: 0px auto;
@@ -115,6 +114,9 @@ body {
     flex-direction: column;
     margin-top: 100px;
 
+    a {
+        text-decoration: none;
+    }
     .restaurant__name {
         width: 90%;
         margin: 20px auto;
@@ -128,7 +130,7 @@ h2 {
 
 h3 {
     padding-left: 20px;
-    color: rgb(16, 119, 30);
+
 }
 
 .restaurant__cadre-image__img {
