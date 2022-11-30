@@ -1,3 +1,4 @@
+/* *********** VARIABLES SASS ********* */
 body {
   margin: 0;
   padding: 0;
@@ -38,17 +39,142 @@ body {
   height: 15rem;
   display: flex;
   flex-direction: column;
-  background-color: #f0ecec;
+  background-color: #6c1616;
 }
 .exploration h2 {
-  width: 65%;
+  margin: 1rem 0rem 0.25rem 0rem;
+  text-align: center;
 }
 .exploration p {
-  width: 82%;
+  margin: 0;
   font-size: 1.1rem;
   color: gray;
+  text-align: center;
+}
+
+.exploration__second-h2 {
+  color: yellow;
+}
+
+.exploration__button {
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  height: 3rem;
+  border-radius: 50px;
+  margin: 0px auto;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 2px 6px 2px #e3d5d5;
+  border: none;
+  padding: 0px 1.25rem;
 }
 
 /* *************** FONCTIONNEMENT **************** */
+.choix-restaurant {
+  height: 70px;
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 7px 5px rgb(189, 192, 185);
+}
+.choix-restaurant span {
+  background-color: #9356DC;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+.choix-restaurant .fa-mobile-screen-button, .choix-restaurant .fa-list-ul {
+  color: grey;
+}
+.choix-restaurant .fa-store {
+  color: #9356DC;
+}
+
 /* *************** PARTIE RESTAURANT **************** */
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.restaurant a {
+  text-decoration: none;
+}
+.restaurant .restaurant__name {
+  width: 90%;
+  margin: 20px auto;
+}
+
+h2 {
+  padding-left: 20px;
+  color: black;
+}
+
+h3 {
+  padding-left: 20px;
+}
+
+.restaurant__cadre-image__img {
+  width: 100%;
+  height: 11rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.restaurant__name__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.6rem;
+  border-radius: 0px 0px 20px 20px;
+  background-color: darkorange;
+}
+.restaurant__name__footer .fa-heart {
+  color: #9356DC;
+}
+
+.restaurant__name__footer__lieu {
+  color: black;
+}
+
 /* *************** FOOTER *************** */
+.footer {
+  background-color: rgb(60, 53, 53);
+  color: white;
+  height: 150px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.footer .footer__img {
+  height: 20px;
+  width: 30%;
+  color: white;
+  margin-top: 15px;
+}
+
+.footer__fourchette, .footer__hands {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem auto;
+}
+.footer__fourchette .footer__fourchette__icon-ustensile, .footer__hands .footer__fourchette__icon-ustensile {
+  margin-right: 12px;
+}
+.footer__fourchette .footer__hands__shake-hands, .footer__hands .footer__hands__shake-hands {
+  margin-right: 10px;
+}
+
+.footer__mentions-legales, .footer__contact {
+  margin: 0.5rem auto;
+}
