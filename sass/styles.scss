@@ -29,13 +29,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(240, 236, 236);   
+    background-color: rgb(236, 233, 233);   
     border-top: 3px solid #cecece;
 
     p {
         font-weight: 700;
         color: #534f4f;
-        margin-left: 1rem;
+        margin: 0.95rem 1rem;
     }
 
     .fa-solid {
@@ -46,37 +46,31 @@ body {
 /* ********** EXPLORATION ********* */
 
 .exploration {
-    height: 15rem;
+    height: 18rem;
     display: flex;
     flex-direction: column;
-    background-color: #6c1616;
+    background-color: #f9f3f3;
 
     h2 {
-    margin: 1rem 0rem 0.25rem 0rem;
+        margin: 2rem 0rem 0rem;
         text-align: center;
     }
-
-    // .second-h2 {
-    //     color: yellow;
-    // }
-
-    p {
+    .exploration__second-h2 {
         margin: 0;
+    }
+    p {
+        margin: 1rem 0rem 2rem;
         font-size: 1.1rem;
-        color: gray;
+        color: #716f6f;
         text-align: center;
     }
-}
-
-.exploration__second-h2 {
-    color: yellow;
 }
 
 .exploration__button {
     background: linear-gradient(170deg, #ff79da, #9356dc);
     height: 3rem;
     border-radius: 50px;
-    margin: 0px auto;
+    margin: 0rem 5rem;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -87,9 +81,16 @@ body {
 
 
 /* *************** FONCTIONNEMENT **************** */
+.title-above-fonctionnement {
+    margin: 2rem 0.5rem;
+}
 
+.fonctionnement {
+    width: 90%;
+    margin: 0 auto;
+}
 .choix-restaurant {
-    height: 70px;
+    height: 4.2rem;
     width: 90%;
     margin: 0px auto;
     margin-bottom: 0px;
@@ -98,12 +99,17 @@ body {
     align-items: center;
     margin-bottom: 20px;
     border-radius: 20px;
+    background-color: #edf7edb3;
     box-shadow: 3px 7px 5px rgb(189, 192, 185);
 
         span {
             background-color: $primaire;
-            padding: 5px 10px;
+            padding: 2px 7px;
             border-radius: 25px;
+            color: #fff;
+            position: relative;
+            left: -2rem;
+            font-size: 0.9rem;
         }
 
         .fa-mobile-screen-button, .fa-list-ul {
@@ -119,7 +125,8 @@ body {
 .restaurant {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 4rem;
+    background-color: #f2f0f0;
 
     a {
         text-decoration: none;
@@ -151,15 +158,29 @@ h3 {
     justify-content: space-between;
     align-items: center;
     height: 4.6rem;
-    border-radius: 0px 0px 20px 20px;
-    background-color: darkorange;
+    border: 1px solid grey;
+    border-radius: 0px 0px 15px 15px;
 
     .fa-heart {
-        color: #9356DC;
+        color: rgb(148, 25, 25);
     }
 }
 .restaurant__name__footer__lieu {
     color: black;
+    margin-left: 0.75rem;
+
+    p {
+        margin: 0;
+    }
+
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+}
+.restaurant__name__footer__heart {
+    width: 22px;
+    height: 22px;
 }
 /* *************** FOOTER *************** */
 
