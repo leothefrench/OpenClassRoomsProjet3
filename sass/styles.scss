@@ -153,6 +153,23 @@ h3 {
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
+
+.restaurant__cadre__image__new {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: rgb(175, 130, 24);
+    text-align: center;
+    z-index: 1;
+    color: greenyellow;
+    width: 6rem;
+    height: 2rem;
+}
+
+.restaurant__cadre-image {
+    position: relative;
+}
+
 .restaurant__name__footer {
     display: flex;
     justify-content: space-between;
@@ -160,11 +177,17 @@ h3 {
     height: 4.6rem;
     border: 1px solid grey;
     border-radius: 0px 0px 15px 15px;
-
-    .fa-heart {
-        color: rgb(148, 25, 25);
-    }
 }
+
+.fa-heart {
+            color: rgb(148, 25, 25);
+            width: 22px;
+        }
+.fa-heart:hover {
+    color: $primaire;
+}
+
+
 .restaurant__name__footer__lieu {
     color: black;
     margin-left: 0.75rem;
