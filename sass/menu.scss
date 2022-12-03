@@ -50,7 +50,7 @@ body {
 }
 
 h2 {
-    margin: 1rem 1rem 2rem 1rem;;
+    margin: 1rem -1rem 2rem 1rem;;
     font-family: 'Shrikhand', cursive;
     font-size: 1.7rem;
     font-weight: 300;
@@ -72,6 +72,7 @@ h3 {
     font-weight: 300;
     margin: 0;
     padding-left: 1rem;
+    padding-bottom: 0.25rem;
 }
 
 .menu__entrees, .menu__plats, .menu__desserts {
@@ -83,19 +84,19 @@ h3 {
     margin: auto;
 }
 
+.tiret-vert {
+    background-color: $tertiaire;
+    height: 0.2rem;
+    width: 2.5rem;
+    margin-left: 1rem;
+}
+
 h4 {
     padding: 10px 10px 0px;
     margin-bottom: 0px;
     line-height: 20px;
     color: #312d2d;
     
-}
-
-.tiret-vert {
-    background-color: $tertiaire;
-    height: 0.1rem;
-    width: 2.5rem;
-    margin-left: 1rem;
 }
 
 .menu__descriptif {
@@ -122,6 +123,11 @@ h4 {
     box-shadow: 2px 6px 2px #e3d5d5;
     border: none;
     padding: 0px 3rem;
+}
+
+.commander:hover {
+    background: linear-gradient(170deg, #ff79da, #b8a2d2);
+    box-shadow: 0.1rem 0.35rem #c3c6be;
 }
 
 /* *************** FOOTER *************** */
