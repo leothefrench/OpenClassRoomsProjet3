@@ -119,7 +119,7 @@ body {
 .restaurant .restaurant__name {
   width: 90%;
   margin: 20px auto;
-  border: 1px solid grey;
+  border: 1px solid rgba(128, 128, 128, 0.1803921569);
   border-radius: 15px;
 }
 
