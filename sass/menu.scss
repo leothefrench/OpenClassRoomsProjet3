@@ -87,7 +87,19 @@ h3 {
     width: 90%;
     border-radius: 10px;
     background-color: rgb(251, 248, 247);
-    margin: auto;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+            padding: 10px 10px 0px 10px;
+            margin: 0px;
+            color: rgb(57, 54, 54);
+        }
+
+    &__price {
+        padding-top: 2.5rem;
+    }
 }
 
 .tiret-vert {
@@ -98,11 +110,9 @@ h3 {
 }
 
 h4 {
-    padding: 10px 10px 0px;
-    margin-bottom: 0px;
-    line-height: 20px;
-    color: #312d2d;
-    
+    padding: 10px 0px 0px 10px;
+    margin: 0px;
+    color: #312d2d;  
 }
 
 .menu__descriptif {
@@ -111,12 +121,15 @@ h4 {
     align-items: center;
     padding: 3px 10px 0px 10px;
     font-size: 0.9rem;
-    p {
-        margin: 0px;
-        color: rgb(57, 54, 54);
-    }
 }
 
+        .choix-restaurent__check {
+            background-color: rgb(154, 220, 154);
+            width: 3.5rem;
+            border-radius: 0px 10px 10px 0px;
+            text-align: center;
+            padding: 1.38rem 0rem;
+        }
 
 .commander {
     background: linear-gradient(170deg, #ff79da, #9356dc);
