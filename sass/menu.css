@@ -68,13 +68,14 @@ h3 {
   color: #666262;
   font-weight: 300;
   margin: 0;
-  padding-left: 1rem;
+  padding-left: 1.3rem;
   padding-bottom: 0.25rem;
+  margin-top: 2rem;
 }
 
 .menu__entrees, .menu__plats, .menu__desserts {
   background-color: darkcyan;
-  height: 65px;
+  height: 4rem;
   width: 90%;
   border-radius: 10px;
   background-color: rgb(251, 248, 247);
@@ -85,7 +86,7 @@ h3 {
   background-color: #99E2D0;
   height: 0.2rem;
   width: 2.5rem;
-  margin-left: 1rem;
+  margin-left: 1.3rem;
 }
 
 h4 {

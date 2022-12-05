@@ -89,21 +89,31 @@ body {
   border-radius: 20px;
   background-color: rgba(237, 247, 237, 0.7019607843);
   box-shadow: 3px 7px 5px rgb(189, 192, 185);
+  position: relative;
 }
 .choix-restaurant span {
   background-color: #9356DC;
   padding: 2px 7px;
   border-radius: 25px;
   color: #fff;
-  position: relative;
-  left: -2rem;
+  position: absolute;
+  left: -0.5rem;
   font-size: 0.9rem;
+}
+.choix-restaurant__icon {
+  display: flex;
+  align-items: center;
+  margin-left: -3rem;
+}
+.choix-restaurant h4 {
+  padding-left: 1.5rem;
+}
+.choix-restaurant .fa-solid, .choix-restaurant .fa-list-ul {
+  font-size: 1.2rem;
+  color: #9356DC;
 }
 .choix-restaurant .fa-store, .choix-restaurant .fa-mobile-screen-button, .choix-restaurant .fa-list-ul {
   color: grey;
-}
-.choix-restaurant .fa-store:hover, .choix-restaurant .fa-mobile-screen-button:hover, .choix-restaurant .fa-list-ul:hover {
-  color: #9356DC;
 }
 
 /* *************** PARTIE RESTAURANT **************** */

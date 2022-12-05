@@ -100,24 +100,39 @@ body {
     border-radius: 20px;
     background-color: #edf7edb3;
     box-shadow: 3px 7px 5px rgb(189, 192, 185);
+    position: relative;
 
         span {
             background-color: $primaire;
             padding: 2px 7px;
             border-radius: 25px;
             color: #fff;
-            position: relative;
-            left: -2rem;
+            position: absolute;
+            left: -0.5rem;
             font-size: 0.9rem;
         }
 
+        &__icon {
+            display: flex;
+            align-items: center;
+            margin-left: -3rem;
+        }
+
+        h4 {
+            padding-left: 1.5rem;
+        }
+
+        .fa-solid, .fa-list-ul{
+            font-size: 1.2rem;
+            color: $primaire;
+        }
         .fa-store, .fa-mobile-screen-button, .fa-list-ul {
             color: grey;
         }
 
-        .fa-store:hover, .fa-mobile-screen-button:hover, .fa-list-ul:hover {
-            color: $primaire ;
-        }
+        // .fa-store:hover, .fa-mobile-screen-button:hover, .fa-list-ul:hover {
+        //     color: $primaire ;
+        // }
 }
 
 /* *************** PARTIE RESTAURANT **************** */
