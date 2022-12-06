@@ -67,6 +67,10 @@ body {
   border: none;
   padding: 0px 1.25rem;
 }
+.exploration__button:hover {
+  background: linear-gradient(170deg, #ff79da, #b8a2d2);
+  box-shadow: 0.1rem 0.35rem #c3c6be;
+}
 
 /* *************** FONCTIONNEMENT **************** */
 .title-above-fonctionnement {
@@ -87,9 +91,13 @@ body {
   align-items: center;
   margin-bottom: 20px;
   border-radius: 20px;
-  background-color: rgba(237, 247, 237, 0.7019607843);
+  background-color: #fff;
   box-shadow: 3px 7px 5px rgb(189, 192, 185);
   position: relative;
+}
+.choix-restaurant:hover {
+  background-color: rgba(244, 244, 244, 0.95);
+  box-shadow: 3px 7px 5px rgb(158, 160, 155);
 }
 .choix-restaurant span {
   background-color: #9356DC;
@@ -176,12 +184,11 @@ h3 {
 }
 
 .fa-heart {
-  color: rgb(148, 25, 25);
-  width: 22px;
+  font-size: x-large;
 }
 
 .fa-heart:hover {
-  color: #9356DC;
+  color: linear-gradient(170deg, #ff79da, #b8a2d2);
 }
 
 .restaurant__name__footer__lieu {
@@ -194,11 +201,6 @@ h3 {
 .restaurant__name__footer__lieu h3 {
   margin: 0 0 0.25rem 0;
   padding: 0;
-}
-
-.restaurant__name__footer__heart {
-  width: 22px;
-  height: 22px;
 }
 
 /* *************** FOOTER *************** */

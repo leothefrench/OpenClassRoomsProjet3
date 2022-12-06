@@ -37,13 +37,17 @@ body {
   align-items: baseline;
   justify-content: space-between;
 }
-.title-and-heart .title-and-heart__heart {
-  padding: 0rem 2.5rem;
-}
-.title-and-heart .title-and-heart__heart:hover {
-  padding: 0rem;
+
+.fa-icon {
   color: transparent;
   transition: all 350ms;
+  padding: 0px;
+}
+
+.fa-icon:nth-child(2):hover {
+  background: linear-gradient(to bottom left, #9356dc, #ff79da);
+  font-size: large;
+  transform: scale(2);
 }
 
 h2 {
@@ -87,9 +91,11 @@ h3 {
   padding: 10px 10px 0px 10px;
   margin: 0px;
   color: rgb(57, 54, 54);
+  font-size: 0.9rem;
 }
 .menu__entrees__price, .menu__plats__price, .menu__desserts__price {
   padding-top: 2.5rem;
+  font-size: 0.9rem;
 }
 
 .tiret-vert {
@@ -119,6 +125,14 @@ h4 {
   border-radius: 0px 10px 10px 0px;
   text-align: center;
   padding: 1.38rem 0rem;
+  transform: translateX(100px);
+}
+.choix-restaurent__check:active {
+  transform: translateX(0px);
+}
+.choix-restaurent__check .fa-circle-check {
+  font-size: 1.2rem;
+  color: white;
 }
 
 .commander {

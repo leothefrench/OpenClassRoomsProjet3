@@ -43,15 +43,17 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+}
 
-    .title-and-heart__heart {
-        padding: 0rem 2.5rem;
-    }
-    .title-and-heart__heart:hover {
-        padding: 0rem;
-        color: transparent;
-        transition: all 350ms;
-    }
+.fa-icon {
+            color: transparent;
+            transition: all 350ms;
+            padding: 0px;
+        }
+.fa-icon:nth-child(2):hover {
+        background: linear-gradient(to bottom left, #9356dc, #ff79da);
+            font-size: large;
+            transform: scale(2);
 }
 
 h2 {
@@ -95,10 +97,12 @@ h3 {
             padding: 10px 10px 0px 10px;
             margin: 0px;
             color: rgb(57, 54, 54);
+            font-size: 0.9rem;
         }
 
     &__price {
         padding-top: 2.5rem;
+        font-size: .9rem;
     }
 }
 
@@ -123,13 +127,22 @@ h4 {
     font-size: 0.9rem;
 }
 
-        .choix-restaurent__check {
-            background-color: rgb(154, 220, 154);
-            width: 3.5rem;
-            border-radius: 0px 10px 10px 0px;
-            text-align: center;
-            padding: 1.38rem 0rem;
-        }
+.choix-restaurent__check {
+    background-color: rgb(154, 220, 154);
+    width: 3.5rem;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+    padding: 1.38rem 0rem;
+    transform: translateX(100px);
+    // animation: all 400ms;
+            &:active {
+                    transform: translateX(0px);
+                }
+    .fa-circle-check {
+        font-size: 1.2rem;
+        color: white;
+    }
+}
 
 .commander {
     background: linear-gradient(170deg, #ff79da, #9356dc);
