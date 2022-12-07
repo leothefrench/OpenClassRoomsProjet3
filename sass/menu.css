@@ -10,6 +10,7 @@ body {
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .header img {
   height: 1.8rem;
@@ -36,12 +37,14 @@ body {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  position: relative;
 }
 
 .fa-icon {
   color: transparent;
   transition: all 350ms;
   padding: 0px;
+  position: absolute;
 }
 
 .fa-icon:nth-child(2):hover {
@@ -57,6 +60,7 @@ h2 {
   font-weight: 300;
 }
 
+/* MENU */
 .container-menu {
   background-color: #eae9e9;
   border-radius: 45px 45px 0px 0px;
@@ -77,13 +81,38 @@ h3 {
   margin-top: 2rem;
 }
 
+.tiret-vert {
+  background-color: #99E2D0;
+  height: 0.2rem;
+  width: 2.5rem;
+  margin-left: 1.3rem;
+}
+
+/* Menu */
 .menu__entrees, .menu__plats, .menu__desserts {
-  background-color: darkcyan;
+  background-color: #f9f9f9;
   height: 4rem;
   width: 90%;
   border-radius: 10px;
-  background-color: rgb(251, 248, 247);
   margin: 1rem auto;
+  display: flex;
+}
+.menu__entrees:hover > .menu__entrees__texte, .menu__plats:hover > .menu__entrees__texte, .menu__desserts:hover > .menu__entrees__texte {
+  flex: 75%;
+}
+.menu__entrees:hover > .choix-restaurent__check, .menu__plats:hover > .choix-restaurent__check, .menu__desserts:hover > .choix-restaurent__check {
+  flex: 25%;
+  transition: translateX(0px);
+}
+.menu__entrees h4, .menu__plats h4, .menu__desserts h4 {
+  padding: 10px 0px 0px 10px;
+  margin: 0px;
+  color: #312d2d;
+}
+.menu__entrees__texte, .menu__plats__texte, .menu__desserts__texte {
+  flex: 100%;
+}
+.menu__entrees__descriptif, .menu__plats__descriptif, .menu__desserts__descriptif {
   display: flex;
   justify-content: space-between;
 }
@@ -92,31 +121,11 @@ h3 {
   margin: 0px;
   color: rgb(57, 54, 54);
   font-size: 0.9rem;
+  overflow: hidden;
 }
 .menu__entrees__price, .menu__plats__price, .menu__desserts__price {
-  padding-top: 2.5rem;
   font-size: 0.9rem;
-}
-
-.tiret-vert {
-  background-color: #99E2D0;
-  height: 0.2rem;
-  width: 2.5rem;
-  margin-left: 1.3rem;
-}
-
-h4 {
-  padding: 10px 0px 0px 10px;
-  margin: 0px;
-  color: #312d2d;
-}
-
-.menu__descriptif {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3px 10px 0px 10px;
-  font-size: 0.9rem;
+  padding: 10px 10px 0px 10px;
 }
 
 .choix-restaurent__check {
@@ -125,10 +134,10 @@ h4 {
   border-radius: 0px 10px 10px 0px;
   text-align: center;
   padding: 1.38rem 0rem;
+  cursor: pointer;
   transform: translateX(100px);
-}
-.choix-restaurent__check:active {
-  transform: translateX(0px);
+  transition: all 500ms;
+  flex: 0%;
 }
 .choix-restaurent__check .fa-circle-check {
   font-size: 1.2rem;

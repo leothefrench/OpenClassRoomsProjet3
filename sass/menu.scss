@@ -14,6 +14,7 @@ body {
 .header {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     img {
         height: 1.8rem;
@@ -43,17 +44,19 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    position: relative;
 }
 
 .fa-icon {
-            color: transparent;
-            transition: all 350ms;
-            padding: 0px;
-        }
+    color: transparent;
+    transition: all 350ms;
+    padding: 0px;
+    position: absolute;
+    }
 .fa-icon:nth-child(2):hover {
         background: linear-gradient(to bottom left, #9356dc, #ff79da);
-            font-size: large;
-            transform: scale(2);
+        font-size: large;
+        transform: scale(2);
 }
 
 h2 {
@@ -63,6 +66,7 @@ h2 {
     font-weight: 300;
 }
 
+/* MENU */
 .container-menu {
     background-color: #eae9e9;
     border-radius: 45px 45px 0px 0px;
@@ -83,29 +87,6 @@ h3 {
     margin-top: 2rem;
 }
 
-.menu__entrees, .menu__plats, .menu__desserts {
-    background-color: darkcyan;
-    height: 4rem;
-    width: 90%;
-    border-radius: 10px;
-    background-color: rgb(251, 248, 247);
-    margin: 1rem auto;
-    display: flex;
-    justify-content: space-between;
-
-    p {
-            padding: 10px 10px 0px 10px;
-            margin: 0px;
-            color: rgb(57, 54, 54);
-            font-size: 0.9rem;
-        }
-
-    &__price {
-        padding-top: 2.5rem;
-        font-size: .9rem;
-    }
-}
-
 .tiret-vert {
     background-color: $tertiaire;
     height: 0.2rem;
@@ -113,18 +94,51 @@ h3 {
     margin-left: 1.3rem;
 }
 
-h4 {
-    padding: 10px 0px 0px 10px;
-    margin: 0px;
-    color: #312d2d;  
-}
-
-.menu__descriptif {
+/* Menu */
+.menu__entrees, .menu__plats, .menu__desserts {
+    background-color: #f9f9f9;
+    height: 4rem;
+    width: 90%;
+    border-radius: 10px;
+    margin: 1rem auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3px 10px 0px 10px;
-    font-size: 0.9rem;
+
+    &:hover>.menu__entrees__texte {
+        flex: 75%;
+    }
+
+    &:hover>.choix-restaurent__check {
+        flex: 25%;
+        transition: translateX(0px);
+    }
+
+    h4 {
+        padding: 10px 0px 0px 10px;
+        margin: 0px;
+        color: #312d2d;
+    }
+    
+    &__texte {
+        flex: 100%;
+    }
+
+    &__descriptif {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p {
+            padding: 10px 10px 0px 10px;
+            margin: 0px;
+            color: rgb(57, 54, 54);
+            font-size: 0.9rem;
+            overflow: hidden;
+        }
+
+    &__price {
+        font-size: .9rem;
+        padding: 10px 10px 0px 10px;
+    }
 }
 
 .choix-restaurent__check {
@@ -133,11 +147,12 @@ h4 {
     border-radius: 0px 10px 10px 0px;
     text-align: center;
     padding: 1.38rem 0rem;
+    cursor: pointer;
     transform: translateX(100px);
-    // animation: all 400ms;
-            &:active {
-                    transform: translateX(0px);
-                }
+    transition: all 500ms;
+    flex: 0%;
+    
+
     .fa-circle-check {
         font-size: 1.2rem;
         color: white;
