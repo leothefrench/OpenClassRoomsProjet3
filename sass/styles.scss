@@ -103,12 +103,12 @@ body {
     align-items: center;
     margin-bottom: 20px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: rgb(240, 240, 240);
     box-shadow: 3px 7px 5px rgb(189, 192, 185);
     position: relative;
 
         &:hover {
-            background-color: rgba(244, 244, 244, 0.95);
+            background-color: #fff;
             box-shadow: 3px 7px 5px rgb(158, 160, 155);
         }
 
@@ -208,9 +208,10 @@ h3 {
 
 .fa-heart {
     font-size: x-large;
-}
-.fa-heart:hover {
-    color: linear-gradient(170deg, #ff79da, #b8a2d2);
+
+    &:hover {
+        color: linear-gradient(170deg, #ff79da, #b8a2d2);
+    }
 }
 
 
@@ -227,10 +228,7 @@ h3 {
         padding: 0;
     }
 }
-// .restaurant__name__footer__heart {
-//     width: 22px;
-//     height: 22px;
-// }
+
 /* *************** FOOTER *************** */
 
 .footer {

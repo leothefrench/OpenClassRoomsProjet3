@@ -91,12 +91,12 @@ body {
   align-items: center;
   margin-bottom: 20px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: rgb(240, 240, 240);
   box-shadow: 3px 7px 5px rgb(189, 192, 185);
   position: relative;
 }
 .choix-restaurant:hover {
-  background-color: rgba(244, 244, 244, 0.95);
+  background-color: #fff;
   box-shadow: 3px 7px 5px rgb(158, 160, 155);
 }
 .choix-restaurant span {
@@ -186,7 +186,6 @@ h3 {
 .fa-heart {
   font-size: x-large;
 }
-
 .fa-heart:hover {
   color: linear-gradient(170deg, #ff79da, #b8a2d2);
 }

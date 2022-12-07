@@ -37,20 +37,13 @@ body {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  position: relative;
 }
-
-.fa-icon {
-  color: transparent;
-  transition: all 350ms;
-  padding: 0px;
-  position: absolute;
-}
-
-.fa-icon:nth-child(2):hover {
-  background: linear-gradient(to bottom left, #9356dc, #ff79da);
-  font-size: large;
+.title-and-heart__heart {
+  width: 3rem;
   transform: scale(2);
+}
+.title-and-heart__heart:hover > .fa-icon {
+  background: linear-gradient(to bottom left, #9356dc, #ff79da);
 }
 
 h2 {
@@ -102,7 +95,7 @@ h3 {
 }
 .menu__entrees:hover > .choix-restaurent__check, .menu__plats:hover > .choix-restaurent__check, .menu__desserts:hover > .choix-restaurent__check {
   flex: 25%;
-  transition: translateX(0px);
+  transform: translateX(0px);
 }
 .menu__entrees h4, .menu__plats h4, .menu__desserts h4 {
   padding: 10px 0px 0px 10px;
