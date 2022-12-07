@@ -43,14 +43,25 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    position: relative;
 
     &__heart {
         width: 3rem;
+        height: 1rem;
         transform: scale(2);
 
         &:hover > .fa-icon {
             background: linear-gradient(to bottom left, #9356dc, #ff79da);
         }
+
+        .color-heart {
+            position: absolute;
+
+            &:nth-child(2):hover {
+                background: linear-gradient(to bottom left, #9356dc, #ff79da);
+            }
+        }
+
     }
 }
 
@@ -127,6 +138,7 @@ h3 {
             margin: 0px;
             color: rgb(57, 54, 54);
             font-size: 0.9rem;
+            white-space: nowrap;
             overflow: hidden;
         }
 
