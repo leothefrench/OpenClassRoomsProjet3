@@ -1,4 +1,3 @@
-/* *********** VARIABLES SASS ********* */
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* HEADER */
 .header {
   display: flex;
   align-items: center;
@@ -25,7 +23,6 @@ body {
   color: #000;
 }
 
-/* MENU */
 .img-menu {
   width: 100%;
   height: 16rem;
@@ -40,18 +37,31 @@ body {
   position: relative;
 }
 .title-and-heart__heart {
-  width: 3rem;
-  height: 1rem;
-  transform: scale(2);
+  height: 1.4rem;
+  position: relative;
+  width: 2.5em;
+  font-size: xx-large;
 }
-.title-and-heart__heart:hover > .fa-icon {
-  background: linear-gradient(to bottom left, #9356dc, #ff79da);
-}
-.title-and-heart__heart .color-heart {
+.title-and-heart__heart .fa-regular {
+  left: 0;
   position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.title-and-heart__heart .color-heart:nth-child(2) {
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  transition: all 350ms;
 }
 .title-and-heart__heart .color-heart:nth-child(2):hover {
   background: linear-gradient(to bottom left, #9356dc, #ff79da);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -61,15 +71,15 @@ h2 {
   font-weight: 300;
 }
 
+.main {
+  background-color: #eae9e9;
+}
+
 /* MENU */
 .container-menu {
   background-color: #eae9e9;
   border-radius: 45px 45px 0px 0px;
   transform: translateY(-55px);
-}
-
-.menu {
-  background-color: rgb(235, 238, 232);
 }
 
 h3 {
@@ -89,7 +99,6 @@ h3 {
   margin-left: 1.3rem;
 }
 
-/* Menu */
 .menu__entrees, .menu__plats, .menu__desserts {
   background-color: #f9f9f9;
   height: 4rem;
@@ -97,6 +106,7 @@ h3 {
   border-radius: 10px;
   margin: 1rem auto;
   display: flex;
+  overflow: hidden;
 }
 .menu__entrees:hover > .menu__entrees__texte, .menu__plats:hover > .menu__entrees__texte, .menu__desserts:hover > .menu__entrees__texte {
   flex: 75%;
@@ -109,9 +119,13 @@ h3 {
   padding: 10px 0px 0px 10px;
   margin: 0px;
   color: #312d2d;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__entrees__texte, .menu__plats__texte, .menu__desserts__texte {
   flex: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__entrees__descriptif, .menu__plats__descriptif, .menu__desserts__descriptif {
   display: flex;
@@ -124,6 +138,7 @@ h3 {
   font-size: 0.9rem;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__entrees__price, .menu__plats__price, .menu__desserts__price {
   font-size: 0.9rem;
@@ -186,22 +201,18 @@ h3 {
   margin-top: 15px;
 }
 
-.footer__fourchette,
-.footer__hands {
+.footer__fourchette, .footer__hands {
   display: flex;
   justify-content: flex-start;
   margin: 0.5rem auto;
 }
-.footer__fourchette .footer__fourchette__icon-ustensile,
-.footer__hands .footer__fourchette__icon-ustensile {
+.footer__fourchette .footer__fourchette__icon-ustensile, .footer__hands .footer__fourchette__icon-ustensile {
   margin-right: 12px;
 }
-.footer__fourchette .footer__hands__shake-hands,
-.footer__hands .footer__hands__shake-hands {
+.footer__fourchette .footer__hands__shake-hands, .footer__hands .footer__hands__shake-hands {
   margin-right: 10px;
 }
 
-.footer__mentions-legales,
-.footer__contact {
+.footer__mentions-legales, .footer__contact {
   margin: 0.5rem auto;
 }
