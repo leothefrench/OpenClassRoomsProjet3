@@ -113,8 +113,8 @@ body {
   align-items: center;
   margin-bottom: 20px;
   border-radius: 20px;
-  background-color: rgb(240, 240, 240);
-  box-shadow: 3px 7px 5px rgb(189, 192, 185);
+  background-color: rgba(210, 204, 204, 0.21);
+  box-shadow: 3px 7px 5px rgb(204, 208, 199);
   position: relative;
 }
 .choix-restaurant:hover {
@@ -169,6 +169,8 @@ body {
 h2 {
   padding-left: 20px;
   color: black;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -190,12 +192,13 @@ h3 {
   background-color: #99E2D0;
   text-align: center;
   z-index: 1;
-  color: #36481b;
+  color: rgba(61, 70, 48, 0.5098039216);
   font-weight: 700;
   width: 5rem;
   height: 1.5rem;
   font-size: 0.9rem;
   padding-top: 0.2rem;
+  border-radius: 2px;
 }
 
 .restaurant__cadre-image {
@@ -270,7 +273,7 @@ h3 {
 }
 .footer .footer__img {
   height: 20px;
-  width: 30%;
+  width: 6.5rem;
   color: white;
   margin-top: 15px;
 }
