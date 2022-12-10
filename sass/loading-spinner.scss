@@ -1,0 +1,40 @@
+.loading-spinner {
+    position: fixed;
+    background-color: #ffffff;
+    height: 100vh;
+    inset:0;
+    z-index: 1;
+    opacity: .9;
+    animation: disappear 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    transform-origin: top;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+         &::after {
+               content: "";
+                 width: 100px;
+                 height: 100px;
+                color: green($color: #0d7d11);
+                border: 10px solid transparent;        
+                border-top-color: blue;
+                border-bottom-color: yellow;
+                border-radius: 50%;
+                animation: loading 1s linear infinite;
+         }
+}
+
+@keyframes disappear {
+    to {
+    transform: scale(0);
+    }
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
+    }
+}

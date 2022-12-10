@@ -1,0 +1,52 @@
+.loading-spinner {
+  position: fixed;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-animation: disappear 600ms;
+          animation: disappear 600ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  transform-origin: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-spinner::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  color: 125;
+  border: 10px solid transparent;
+  border-top-color: blue;
+  border-bottom-color: yellow;
+  border-radius: 50%;
+  -webkit-animation: loading 1s linear infinite;
+          animation: loading 1s linear infinite;
+}
+
+@-webkit-keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
