@@ -32,7 +32,7 @@ body {
 
 .img-menu {
     width: 100%;
-    height: 16rem;
+    height: 256px;
     object-fit: cover;
 }
 
@@ -122,6 +122,10 @@ h3 {
     margin: 1rem auto;
     display: flex;
     overflow: hidden;
+    transition: all 2000ms;
+    animation-name: arrived;
+    animation-duration: 900ms;
+    animation-fill-mode: backwards;
 
     &:hover>.menu__entrees__texte {
         flex: 75%;
@@ -140,7 +144,17 @@ h3 {
         white-space: nowrap;
         overflow: hidden;
     }
-    
+    @keyframes arrived {
+        0% {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     &__texte {
         flex: 100%;
         overflow: hidden;
@@ -185,6 +199,11 @@ h3 {
     }
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .commander {
     background: linear-gradient(170deg, #ff79da, #9356dc);
     height: 3rem;
