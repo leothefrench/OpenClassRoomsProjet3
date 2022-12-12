@@ -16,7 +16,7 @@ body {
 
     img {
         height: 1.8rem;
-        font-family: 'Shrikhand', cursive;
+        // font-family: 'Shrikhand', cursive;
         margin: 1rem 4rem;
     }
     
@@ -123,9 +123,7 @@ h3 {
     display: flex;
     overflow: hidden;
     transition: all 2000ms;
-    animation-name: arrived;
-    animation-duration: 900ms;
-    animation-fill-mode: backwards;
+
 
     &:hover>.menu__entrees__texte {
         flex: 75%;
@@ -143,16 +141,6 @@ h3 {
 
         white-space: nowrap;
         overflow: hidden;
-    }
-    @keyframes arrived {
-        0% {
-            opacity: 0;
-            transform: translateY(-100px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
     }
 
     &__texte {
@@ -181,7 +169,34 @@ h3 {
         padding: 10px 10px 0px 10px;
     }
 }
-
+/*  KeyFrames for menu */
+.menu__entrees {
+    animation-name: arrived;
+    animation-duration: 2000ms;
+    animation-fill-mode: backwards;
+}
+.menu__plats {
+    animation-name: arrived;
+    animation-duration: 800ms;
+    animation-fill-mode: backwards;
+}
+.menu__desserts {
+    animation-name: arrived;
+    animation-duration: 800ms;
+    animation-fill-mode: backwards;
+}
+@keyframes arrived {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* CHECK RESTAURANT */
 .choix-restaurent__check {
     background-color: rgb(154, 220, 154);
     width: 3.5rem;

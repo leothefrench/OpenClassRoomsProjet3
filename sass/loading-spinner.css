@@ -9,8 +9,8 @@
           animation: disappear 600ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   transform-origin: top;
   display: flex;
   justify-content: center;
@@ -20,13 +20,14 @@
   content: "";
   width: 100px;
   height: 100px;
-  color: 125;
   border: 10px solid transparent;
-  border-top-color: blue;
-  border-bottom-color: yellow;
-  border-radius: 50%;
-  -webkit-animation: loading 1s linear infinite;
-          animation: loading 1s linear infinite;
+  border-top-color: #9356DC;
+  border-right-color: #99E2D0;
+  border-bottom-color: #FF79DA;
+  border-left-color: #9356DC;
+  border-radius: 35%;
+  -webkit-animation: loading 1s ease-in-out infinite;
+          animation: loading 1s ease-in-out infinite;
 }
 
 @-webkit-keyframes disappear {

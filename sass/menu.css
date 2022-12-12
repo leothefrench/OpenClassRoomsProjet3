@@ -12,7 +12,6 @@ body {
 }
 .header img {
   height: 1.8rem;
-  font-family: "Shrikhand", cursive;
   margin: 1rem 4rem;
 }
 .header a {
@@ -108,12 +107,6 @@ h3 {
   display: flex;
   overflow: hidden;
   transition: all 2000ms;
-  -webkit-animation-name: arrived;
-          animation-name: arrived;
-  -webkit-animation-duration: 900ms;
-          animation-duration: 900ms;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
 }
 .menu__entrees:hover > .menu__entrees__texte, .menu__plats:hover > .menu__entrees__texte, .menu__desserts:hover > .menu__entrees__texte {
   flex: 75%;
@@ -128,26 +121,6 @@ h3 {
   color: #312d2d;
   white-space: nowrap;
   overflow: hidden;
-}
-@-webkit-keyframes arrived {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes arrived {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 .menu__entrees__texte, .menu__plats__texte, .menu__desserts__texte {
   flex: 100%;
@@ -172,6 +145,56 @@ h3 {
   padding: 10px 10px 0px 10px;
 }
 
+/*  KeyFrames for menu */
+.menu__entrees {
+  -webkit-animation-name: arrived;
+          animation-name: arrived;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.menu__plats {
+  -webkit-animation-name: arrived;
+          animation-name: arrived;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.menu__desserts {
+  -webkit-animation-name: arrived;
+          animation-name: arrived;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes arrived {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrived {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* CHECK RESTAURANT */
 .choix-restaurent__check {
   background-color: rgb(154, 220, 154);
   width: 3.5rem;

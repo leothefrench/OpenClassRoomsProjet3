@@ -10,17 +10,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* LOGO PAGE */
 .logo {
     text-align: center;
 
     img {
         width: 9rem;
         height: 1.75rem;
-        font-family: "Shrikhand", cursive;
+        // font-family: "Shrikhand", cursive;
         margin: 0.85rem auto;
     }
 }
-
+/* LOCATION RESTAURANT */
 .location {
     display: flex;
     justify-content: center;
@@ -28,15 +29,15 @@ body {
     background-color: rgb(236, 233, 233);   
     border-top: 3px solid #cecece;
 
-    p {
-        font-weight: 700;
-        color: #534f4f;
-        margin: 0.95rem 1rem;
-    }
+        p {
+            font-weight: 700;
+            color: #534f4f;
+            margin: 0.95rem 1rem;
+        }
 
-    .fa-solid {
-        color: #403737;
-    }
+        .fa-solid {
+            color: #403737;
+        }
 }
 
 .exploration {
@@ -62,15 +63,14 @@ body {
 
 .exploration__button {
     background: linear-gradient(170deg, #ff79da, #9356dc);
-    height: 3rem;
     border-radius: 50px;
-    margin: 0rem 5rem;
+    margin: 0rem 5rem 3.5rem;
     color: #fff;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 600;
     box-shadow: 2px 6px 2px #e3d5d5;
     border: none;
-    padding: 0px 1.25rem;
+    padding: 1.09rem 1.3rem;
 
     &:hover {
         background: linear-gradient(170deg, #ff79da, #b8a2d2);

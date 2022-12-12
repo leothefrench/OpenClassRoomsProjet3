@@ -1,3 +1,7 @@
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+
 .loading-spinner {
     position: fixed;
     background-color: #ffffff;
@@ -7,23 +11,24 @@
     opacity: .9;
     animation: disappear 600ms;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    animation-delay: 2.5s;
     transform-origin: top;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
          &::after {
-               content: "";
-                 width: 100px;
-                 height: 100px;
-                color: green($color: #0d7d11);
-                border: 10px solid transparent;        
-                border-top-color: blue;
-                border-bottom-color: yellow;
-                border-radius: 50%;
-                animation: loading 1s linear infinite;
+            content: "";
+            width: 100px;
+            height: 100px;
+            border: 10px solid transparent; 
+            border-top-color:$primaire;
+            border-right-color: $tertiaire;
+            border-bottom-color: $secondaire;
+            border-left-color:$primaire;
+
+            border-radius: 35%;
+            animation: loading 1s ease-in-out infinite;
          }
 }
 
