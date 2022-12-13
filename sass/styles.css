@@ -32,6 +32,7 @@ body {
   color: #403737;
 }
 
+/* EXPLORER NOS RESTAURANTS */
 .exploration {
   height: 18rem;
   display: flex;
@@ -42,7 +43,7 @@ body {
   margin: 2rem 0rem 0rem;
   text-align: center;
 }
-.exploration .exploration__second-h2 {
+.exploration__second-h2 {
   margin: 0;
 }
 .exploration p {
@@ -51,7 +52,6 @@ body {
   color: #716f6f;
   text-align: center;
 }
-
 .exploration__button {
   background: linear-gradient(170deg, #ff79da, #9356dc);
   border-radius: 50px;
@@ -68,6 +68,7 @@ body {
   box-shadow: 0.1rem 0.35rem #c3c6be;
 }
 
+/* FONCTIONNEMENT */
 .title-above-fonctionnement {
   margin: 2rem 0.5rem;
 }
@@ -135,6 +136,9 @@ body {
   margin: 20px auto;
   border: 1px solid rgba(128, 128, 128, 0.1803921569);
   border-radius: 15px;
+}
+.restaurant .restaurant__name--bottom {
+  margin-bottom: 4rem;
 }
 
 h2 {

@@ -9,6 +9,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.main {
+    background-color: #eae9e9
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -169,21 +173,17 @@ h3 {
         padding: 10px 10px 0px 10px;
     }
 }
-/*  KeyFrames for menu */
+
+/*  KeyFrames ARRIVED for menu */
 .menu__entrees {
-    animation-name: arrived;
-    animation-duration: 2000ms;
-    animation-fill-mode: backwards;
+    animation: arrived 1400ms backwards;
 }
 .menu__plats {
-    animation-name: arrived;
-    animation-duration: 800ms;
-    animation-fill-mode: backwards;
+    animation: arrived 1200ms backwards;
 }
 .menu__desserts {
-    animation-name: arrived;
-    animation-duration: 800ms;
-    animation-fill-mode: backwards;
+    animation: arrived 1000ms backwards;
+
 }
 @keyframes arrived {
     from {
@@ -196,6 +196,7 @@ h3 {
         transform: translateY(0);
     }
 }
+
 /* CHECK RESTAURANT */
 .choix-restaurent__check {
     background-color: rgb(154, 220, 154);

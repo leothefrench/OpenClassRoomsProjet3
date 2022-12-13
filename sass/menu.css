@@ -5,6 +5,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.main {
+  background-color: #eae9e9;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -145,32 +149,20 @@ h3 {
   padding: 10px 10px 0px 10px;
 }
 
-/*  KeyFrames for menu */
+/*  KeyFrames ARRIVED for menu */
 .menu__entrees {
-  -webkit-animation-name: arrived;
-          animation-name: arrived;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation: arrived 1400ms backwards;
+          animation: arrived 1400ms backwards;
 }
 
 .menu__plats {
-  -webkit-animation-name: arrived;
-          animation-name: arrived;
-  -webkit-animation-duration: 800ms;
-          animation-duration: 800ms;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation: arrived 1200ms backwards;
+          animation: arrived 1200ms backwards;
 }
 
 .menu__desserts {
-  -webkit-animation-name: arrived;
-          animation-name: arrived;
-  -webkit-animation-duration: 800ms;
-          animation-duration: 800ms;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation: arrived 1000ms backwards;
+          animation: arrived 1000ms backwards;
 }
 
 @-webkit-keyframes arrived {
