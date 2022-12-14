@@ -231,7 +231,7 @@ h3 {
 .footer {
   background-color: rgb(60, 53, 53);
   color: white;
-  height: 150px;
+  height: 11rem;
   font-size: 14px;
   font-weight: 500;
   padding-left: 20px;
@@ -242,11 +242,12 @@ h3 {
   font-size: 1rem;
   margin: 0.5rem 0;
 }
-.footer .footer__img {
-  height: 20px;
-  width: 6.5rem;
-  color: white;
-  margin-top: 15px;
+.footer h5 {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1rem 0 0.6rem;
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
 }
 
 .footer__fourchette, .footer__hands {
