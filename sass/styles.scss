@@ -53,10 +53,10 @@ body {
             text-align: center;
         }
 
-        &__second-h2 {
+        .exploration__second-h2 {
             margin: 0;
         }
-        
+      
         p {
             margin: 1rem 0rem 2rem;
             font-size: 1.1rem;
@@ -297,7 +297,7 @@ h3 {
     margin: 0.5rem auto;
 
     .footer__fourchette__icon-ustensile {
-        margin-right: 12px;
+        margin-right: 1rem;
     }
     .footer__hands__shake-hands {
         margin-right: 10px;
