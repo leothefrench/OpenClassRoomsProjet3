@@ -5,6 +5,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 9rem;
+  height: 1.75rem;
+  margin: 0.85rem auto;
+}
+
 .footer {
   background-color: rgb(60, 53, 53);
   color: white;
@@ -100,33 +109,6 @@ body {
     transform: rotate(1turn);
   }
 }
-/* LOGO PAGE */
-.logo {
-  text-align: center;
-}
-.logo img {
-  width: 9rem;
-  height: 1.75rem;
-  margin: 0.85rem auto;
-}
-
-/* LOCATION RESTAURANT */
-.location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(236, 233, 233);
-  border-top: 3px solid #cecece;
-}
-.location p {
-  font-weight: 700;
-  color: #534f4f;
-  margin: 0.95rem 1rem;
-}
-.location .fa-solid {
-  color: #403737;
-}
-
 /* EXPLORER NOS RESTAURANTS */
 .exploration {
   height: 18rem;
@@ -138,14 +120,14 @@ body {
   margin: 2rem 0rem 0rem;
   text-align: center;
 }
-.exploration .exploration__second-h2 {
-  margin: 0;
-}
 .exploration p {
   margin: 1rem 0rem 2rem;
   font-size: 1.1rem;
   color: #716f6f;
   text-align: center;
+}
+.exploration__second-h2 {
+  margin: 0;
 }
 .exploration__button {
   background: linear-gradient(170deg, #99E2D0, #FF79DA, #9356DC);
@@ -163,7 +145,23 @@ body {
   box-shadow: 0.1rem 0.35rem #c3c6be;
 }
 
-/* FONCTIONNEMENT */
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 233, 233);
+  border-top: 3px solid #cecece;
+}
+.location p {
+  font-weight: 700;
+  color: #534f4f;
+  margin: 0.95rem 1rem;
+}
+
+.location .fa-solid {
+  color: #403737;
+}
+
 .title-above-fonctionnement {
   margin: 2rem 0.5rem;
 }
@@ -185,10 +183,12 @@ body {
   box-shadow: 3px 7px 5px rgb(204, 208, 199);
   position: relative;
 }
+
 .choix-restaurant:hover {
   background-color: #fff;
   box-shadow: 3px 7px 5px rgb(158, 160, 155);
 }
+
 .choix-restaurant span {
   background-color: #9356DC;
   padding: 2px 7px;
@@ -198,22 +198,32 @@ body {
   left: -0.5rem;
   font-size: 0.9rem;
 }
+
 .choix-restaurant__icon {
   display: flex;
   align-items: center;
   margin-left: -3rem;
 }
+
 .choix-restaurant h4 {
   padding-left: 1.5rem;
 }
-.choix-restaurant .fa-solid, .choix-restaurant .fa-list-ul {
+
+.choix-restaurant .fa-solid,
+.choix-restaurant .fa-list-ul {
   font-size: 1.2rem;
   color: #9356DC;
 }
-.choix-restaurant .fa-store, .choix-restaurant .fa-mobile-screen-button, .choix-restaurant .fa-list-ul {
+
+.choix-restaurant .fa-store,
+.choix-restaurant .fa-mobile-screen-button,
+.choix-restaurant .fa-list-ul {
   color: grey;
 }
-.choix-restaurant .fa-store:hover, .choix-restaurant .fa-mobile-screen-button:hover, .choix-restaurant .fa-list-ul:hover {
+
+.choix-restaurant .fa-store:hover,
+.choix-restaurant .fa-mobile-screen-button:hover,
+.choix-restaurant .fa-list-ul:hover {
   color: #9356DC;
 }
 
@@ -224,15 +234,18 @@ body {
   margin-top: 4rem;
   background-color: #f2f0f0;
 }
+
 .restaurant a {
   text-decoration: none;
 }
+
 .restaurant__name {
   width: 90%;
   margin: 20px auto;
   border: 1px solid rgba(128, 128, 128, 0.1803921569);
   border-radius: 15px;
 }
+
 .restaurant__name--bottom {
   margin-bottom: 4rem;
 }
@@ -252,7 +265,7 @@ h3 {
   width: 100%;
   height: 165px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -282,12 +295,14 @@ h3 {
   align-items: center;
   height: 4.3rem;
 }
+
 .restaurant__name__footer__heart {
   height: 1.5rem;
   position: relative;
   width: 2.5em;
   font-size: xx-large;
 }
+
 .restaurant__name__footer__heart .fa-solid {
   opacity: 0;
   left: 0;
@@ -295,6 +310,7 @@ h3 {
   text-align: center;
   width: 100%;
 }
+
 .restaurant__name__footer__heart .fa-regular {
   position: absolute;
   text-align: center;
@@ -305,6 +321,7 @@ h3 {
 .heart {
   font-size: x-large;
 }
+
 .heart:hover {
   background: linear-gradient(to bottom left, #9356dc, #ff79da);
   background-clip: border-box;
@@ -319,9 +336,11 @@ h3 {
   color: black;
   margin-left: 0.75rem;
 }
+
 .restaurant__name__footer__lieu p {
   margin: 0;
 }
+
 .restaurant__name__footer__lieu h3 {
   margin: 0 0 0.25rem 0;
   padding: 0;

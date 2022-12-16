@@ -5,6 +5,94 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* MENU */
+.container-menu {
+  background-color: #eae9e9;
+  border-radius: 45px 45px 0px 0px;
+  transform: translateY(-55px);
+}
+
+h3 {
+  font-size: 1rem;
+  color: #666262;
+  font-weight: 300;
+  margin: 0;
+  padding-left: 1.3rem;
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
+}
+
+.tiret-vert {
+  background-color: #99E2D0;
+  height: 0.2rem;
+  width: 2.5rem;
+  margin-left: 1.3rem;
+}
+
+.menu__entrees,
+.menu__plats,
+.menu__desserts {
+  background-color: #f9f9f9;
+  height: 4rem;
+  width: 90%;
+  border-radius: 10px;
+  margin: 1rem auto;
+  display: flex;
+  overflow: hidden;
+  transition: all 2000ms;
+}
+.menu__entrees:hover > .menu__entrees__texte,
+.menu__plats:hover > .menu__entrees__texte,
+.menu__desserts:hover > .menu__entrees__texte {
+  flex: 75%;
+}
+.menu__entrees:hover > .choix-restaurent__check,
+.menu__plats:hover > .choix-restaurent__check,
+.menu__desserts:hover > .choix-restaurent__check {
+  flex: 25%;
+  transform: translateX(0px);
+}
+.menu__entrees h4,
+.menu__plats h4,
+.menu__desserts h4 {
+  padding: 10px 0px 0px 10px;
+  margin: 0px;
+  color: #312d2d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__entrees__texte,
+.menu__plats__texte,
+.menu__desserts__texte {
+  flex: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__entrees__descriptif,
+.menu__plats__descriptif,
+.menu__desserts__descriptif {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__entrees p,
+.menu__plats p,
+.menu__desserts p {
+  padding: 10px 10px 0px 10px;
+  margin: 0px;
+  color: rgb(57, 54, 54);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__entrees__price,
+.menu__plats__price,
+.menu__desserts__price {
+  font-size: 0.9rem;
+  padding: 10px 10px 0px 10px;
+}
+
 .footer {
   background-color: rgb(60, 53, 53);
   color: white;
@@ -45,6 +133,29 @@ body {
 .footer__mentions-legales,
 .footer__contact {
   margin: 0.5rem auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commander {
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  height: 3rem;
+  border-radius: 50px;
+  margin: 2.5rem 6rem;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 2px 6px 2px #e3d5d5;
+  border: none;
+  padding: 0px 3rem;
+}
+.commander:hover {
+  background: linear-gradient(170deg, #ff79da, #b8a2d2);
+  box-shadow: 0.1rem 0.35rem #c3c6be;
 }
 
 .main {
@@ -116,82 +227,6 @@ h2 {
   font-weight: 300;
 }
 
-.main {
-  background-color: #eae9e9;
-}
-
-/* MENU */
-.container-menu {
-  background-color: #eae9e9;
-  border-radius: 45px 45px 0px 0px;
-  transform: translateY(-55px);
-}
-
-h3 {
-  font-size: 1rem;
-  color: #666262;
-  font-weight: 300;
-  margin: 0;
-  padding-left: 1.3rem;
-  padding-bottom: 0.25rem;
-  margin-top: 2rem;
-}
-
-.tiret-vert {
-  background-color: #99E2D0;
-  height: 0.2rem;
-  width: 2.5rem;
-  margin-left: 1.3rem;
-}
-
-.menu__entrees, .menu__plats, .menu__desserts {
-  background-color: #f9f9f9;
-  height: 4rem;
-  width: 90%;
-  border-radius: 10px;
-  margin: 1rem auto;
-  display: flex;
-  overflow: hidden;
-  transition: all 2000ms;
-}
-.menu__entrees:hover > .menu__entrees__texte, .menu__plats:hover > .menu__entrees__texte, .menu__desserts:hover > .menu__entrees__texte {
-  flex: 75%;
-}
-.menu__entrees:hover > .choix-restaurent__check, .menu__plats:hover > .choix-restaurent__check, .menu__desserts:hover > .choix-restaurent__check {
-  flex: 25%;
-  transform: translateX(0px);
-}
-.menu__entrees h4, .menu__plats h4, .menu__desserts h4 {
-  padding: 10px 0px 0px 10px;
-  margin: 0px;
-  color: #312d2d;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu__entrees__texte, .menu__plats__texte, .menu__desserts__texte {
-  flex: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu__entrees__descriptif, .menu__plats__descriptif, .menu__desserts__descriptif {
-  display: flex;
-  justify-content: space-between;
-}
-.menu__entrees p, .menu__plats p, .menu__desserts p {
-  padding: 10px 10px 0px 10px;
-  margin: 0px;
-  color: rgb(57, 54, 54);
-  font-size: 0.9rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu__entrees__price, .menu__plats__price, .menu__desserts__price {
-  font-size: 0.9rem;
-  padding: 10px 10px 0px 10px;
-}
-
 /*  KeyFrames ARRIVED for menu */
 .menu__entrees {
   -webkit-animation: arrived 1400ms backwards;
@@ -244,28 +279,4 @@ h3 {
 .choix-restaurent__check .fa-circle-check {
   font-size: 1.2rem;
   color: white;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.commander {
-  background: linear-gradient(170deg, #ff79da, #9356dc);
-  height: 3rem;
-  border-radius: 50px;
-  margin: 2.5rem 6rem;
-  color: #fff;
-  font-size: 15px;
-  font-weight: bold;
-  box-shadow: 2px 6px 2px #e3d5d5;
-  border: none;
-  padding: 0px 3rem;
-}
-
-.commander:hover {
-  background: linear-gradient(170deg, #ff79da, #b8a2d2);
-  box-shadow: 0.1rem 0.35rem #c3c6be;
 }

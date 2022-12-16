@@ -1,0 +1,82 @@
+/* MENU */
+.container-menu {
+    background-color: #eae9e9;
+    border-radius: 45px 45px 0px 0px;
+    transform: translateY(-55px);
+}
+
+h3 {
+    font-size: 1rem;
+    color: #666262;
+    font-weight: 300;
+    margin: 0;
+    padding-left: 1.3rem;
+    padding-bottom: 0.25rem;
+    margin-top: 2rem;
+}
+
+.tiret-vert {
+    background-color: $tertiaire;
+    height: 0.2rem;
+    width: 2.5rem;
+    margin-left: 1.3rem;
+}
+
+.menu__entrees,
+.menu__plats,
+.menu__desserts {
+    background-color: #f9f9f9;
+    height: 4rem;
+    width: 90%;
+    border-radius: 10px;
+    margin: 1rem auto;
+    display: flex;
+    overflow: hidden;
+    transition: all 2000ms;
+
+
+    &:hover>.menu__entrees__texte {
+        flex: 75%;
+    }
+
+    &:hover>.choix-restaurent__check {
+        flex: 25%;
+        transform: translateX(0px);
+    }
+
+    h4 {
+        padding: 10px 0px 0px 10px;
+        margin: 0px;
+        color: #312d2d;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__texte {
+        flex: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__descriptif {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p {
+        padding: 10px 10px 0px 10px;
+        margin: 0px;
+        color: rgb(57, 54, 54);
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__price {
+        font-size: .9rem;
+        padding: 10px 10px 0px 10px;
+    }
+}

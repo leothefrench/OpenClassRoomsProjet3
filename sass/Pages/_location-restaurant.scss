@@ -1,0 +1,17 @@
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 233, 233);
+    border-top: 3px solid #cecece;
+
+    p {
+        font-weight: 700;
+        color: #534f4f;
+        margin: 0.95rem 1rem;
+    }
+}
+
+.location .fa-solid {
+    color: #403737;
+}
