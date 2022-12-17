@@ -12,26 +12,21 @@ body {
   transform: translateY(-55px);
 }
 
-.titre-block-choix {
-  margin-top: 2rem;
-  margin-left: 1.3rem;
-}
-
 h3 {
   font-size: 1rem;
   color: #666262;
   font-weight: 300;
   margin: 0;
-  /* padding-left: 1.3rem; */
-  /* padding-bottom: 0.25rem; */
-  /* margin-top: 2rem; */
+  padding-left: 1.3rem;
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
 }
 
 .tiret-vert {
   background-color: #99E2D0;
   height: 0.2rem;
   width: 2.5rem;
-  /* margin-left: 1.3rem; */
+  margin-left: 1.3rem;
 }
 
 .menu__entrees,
