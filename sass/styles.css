@@ -9,7 +9,6 @@ body {
   text-align: center;
 }
 .logo img {
-  width: 9rem;
   height: 1.75rem;
   margin: 0.85rem auto;
 }
@@ -111,13 +110,11 @@ body {
 }
 /* EXPLORER NOS RESTAURANTS */
 .exploration {
-  height: 18rem;
   display: flex;
   flex-direction: column;
   background-color: #f9f3f3;
 }
-.reservez {
-  margin: 2rem 0rem 0rem;
+.exploration h2 {
   text-align: center;
 }
 .exploration p {
@@ -128,7 +125,10 @@ body {
 }
 .exploration__second-h2 {
   margin: 0;
-  text-align: center;
+}
+.exploration__button-cadre {
+  display: flex;
+  justify-content: center;
 }
 .exploration__button {
   background: linear-gradient(170deg, #99E2D0, #FF79DA, #9356DC);
@@ -202,11 +202,12 @@ body {
   align-items: center;
   margin-left: -3rem;
 }
-.fa-mobile-screen-button {
-  padding-left: 1.5rem;
-}
 .choix-restaurant h4 {
   padding-left: 1.5rem;
+}
+
+.fa-mobile-screen-button {
+  padding-left: 1rem;
 }
 
 .choix-restaurant .fa-solid,
@@ -249,7 +250,6 @@ body {
 
 h2 {
   padding-left: 20px;
-  color: black;
   margin-top: 3rem;
   margin-bottom: 0;
 }
@@ -336,4 +336,3 @@ h3 {
   margin: 0 0 0.25rem 0;
   padding: 0;
 }
-

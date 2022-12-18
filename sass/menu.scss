@@ -1,84 +1,11 @@
 @import "./Utils/variables";
 @import "./Base/body";
+@import "./Layouts/header";
+@import "./Layouts/titre-carte-restaurant";
 @import "./Layouts/footer-cards-menu";
+@import "./Layouts/check-restaurant";
 @import "./Layouts/footer";
 @import "./Pages/button-order";
-
-.main {
-    background-color: #eae9e9
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-        height: 1.8rem;
-        margin: 1rem 4rem;
-    }
-    
-    a {
-        padding-left: 1.8rem;
-    }
-
-    .fa-solid {
-        font-size: x-large;
-        color:#000;
-    }
-}
-
-.img-menu {
-    width: 100%;
-    height: 256px;
-    object-fit: cover;
-}
-
-.title-and-heart {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    position: relative;
-
-    &__heart {
-    height: 1.4rem;
-    position: relative;
-    width: 2.5em;
-    font-size: xx-large;
-
-        .fa-regular {
-            left: 0;
-                position: absolute;
-                text-align: center;
-                width: 100%;
-        }
-
-        .color-heart {
-            &:nth-child(2) {
-                position: absolute;
-                opacity: 0;
-                text-align: center;
-                width: 100%;
-                transition: all 350ms;
-            }
-            &:nth-child(2):hover {
-                background: linear-gradient(to bottom left, #9356dc, #ff79da);
-                background-clip: text;
-                -moz-background-clip: text;
-                -webkit-background-clip: text;
-                opacity: 1;
-                -webkit-text-fill-color:transparent;
-            }
-        }
-    }
-}
-
-h2 {
-    margin: 1rem -1rem 2rem 1rem;;
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.7rem;
-    font-weight: 300;
-}
 
 /*  KeyFrames ARRIVED for menu */
 .menu__entrees {
@@ -103,23 +30,7 @@ h2 {
     }
 }
 
-/* CHECK RESTAURANT */
-.choix-restaurent__check {
-    background-color: rgb(154, 220, 154);
-    width: 3.5rem;
-    border-radius: 0px 10px 10px 0px;
-    text-align: center;
-    padding: 1.38rem 0rem;
-    cursor: pointer;
-    transform: translateX(100px);
-    transition: all 500ms;
-    flex: 0%;
-    
-    .fa-circle-check {
-        font-size: 1.2rem;
-        color: white;
-    }
-}
+
 
 
 

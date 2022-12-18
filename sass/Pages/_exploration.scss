@@ -1,12 +1,11 @@
 /* EXPLORER NOS RESTAURANTS */
 .exploration {
-    height: 18rem;
     display: flex;
     flex-direction: column;
     background-color: #f9f3f3;
 
     h2 {
-        margin: 2rem 0rem 0rem;
+        // margin: 2rem 0rem 0rem;
         text-align: center;
     }
 
@@ -19,6 +18,11 @@
 
     &__second-h2 {
         margin: 0;
+    }
+
+    &__button-cadre {
+        display: flex;
+        justify-content: center;
     }
 
     &__button {

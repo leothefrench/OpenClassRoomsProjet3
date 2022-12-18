@@ -1,0 +1,17 @@
+/* CHECK RESTAURANT */
+.choix-restaurent__check {
+    background-color: rgb(154, 220, 154);
+    width: 3.5rem;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+    padding: 1.38rem 0rem;
+    cursor: pointer;
+    transform: translateX(100px);
+    transition: all 500ms;
+    flex: 0%;
+
+    .fa-circle-check {
+        font-size: 1.2rem;
+        color: white;
+    }
+}
