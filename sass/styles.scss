@@ -8,3 +8,9 @@
 @import "./Pages/fonctionnement";
 @import "./Pages/card-restaurant";
 
+@media screen and (min-width: 1024px) {
+    .cadre4restaurant {
+        display: flex;
+        justify-content: center;
+    }
+}

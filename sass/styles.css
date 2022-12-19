@@ -243,6 +243,7 @@ body {
   margin: 20px auto;
   border: 1px solid rgba(128, 128, 128, 0.1803921569);
   border-radius: 15px;
+  background-color: white;
 }
 .restaurant__name--bottom {
   margin-bottom: 4rem;
@@ -335,4 +336,11 @@ h3 {
 .restaurant__name__footer__lieu h3 {
   margin: 0 0 0.25rem 0;
   padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .cadre4restaurant {
+    display: flex;
+    justify-content: center;
+  }
 }
