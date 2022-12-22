@@ -110,11 +110,6 @@ h3 {
   overflow: hidden;
   transition: all 2000ms;
 }
-.menu__entrees:hover > .menu__entrees__texte,
-.menu__plats:hover > .menu__entrees__texte,
-.menu__desserts:hover > .menu__entrees__texte {
-  flex: 75%;
-}
 .menu__entrees:hover > .choix-restaurent__check,
 .menu__plats:hover > .choix-restaurent__check,
 .menu__desserts:hover > .choix-restaurent__check {
@@ -137,6 +132,11 @@ h3 {
   flex: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.menu__entrees__texte:hover,
+.menu__plats__texte:hover,
+.menu__desserts__texte:hover {
+  flex: 75%;
 }
 .menu__entrees__descriptif,
 .menu__plats__descriptif,

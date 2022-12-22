@@ -34,11 +34,6 @@ h3 {
     overflow: hidden;
     transition: all 2000ms;
 
-
-    &:hover>.menu__entrees__texte {
-        flex: 75%;
-    }
-
     &:hover>.choix-restaurent__check {
         flex: 25%;
         transform: translateX(0px);
@@ -58,6 +53,10 @@ h3 {
         flex: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
+        
+        &:hover {
+            flex: 75%;
+        }
     }
 
     &__descriptif {
