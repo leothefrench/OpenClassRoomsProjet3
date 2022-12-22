@@ -188,6 +188,9 @@ body {
   background-color: #f0dfed;
   box-shadow: 3px 7px 5px rgb(158, 160, 155);
 }
+.choix-restaurant .fa-store:hover, .choix-restaurant .fa-mobile-screen-button:hover, .choix-restaurant .fa-list-ul:hover {
+  color: #9356DC;
+}
 .choix-restaurant span {
   background-color: #9356DC;
   padding: 2px 7px;
@@ -220,12 +223,6 @@ body {
 .choix-restaurant .fa-mobile-screen-button,
 .choix-restaurant .fa-list-ul {
   color: grey;
-}
-
-.choix-restaurant .fa-store:hover,
-.choix-restaurant .fa-mobile-screen-button:hover,
-.choix-restaurant .fa-list-ul:hover {
-  color: #9356DC;
 }
 
 /* RESTAURANT CARDS */

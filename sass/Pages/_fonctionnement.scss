@@ -24,6 +24,10 @@
         box-shadow: 3px 7px 5px rgb(158, 160, 155);
     }
 
+    .fa-store:hover, .fa-mobile-screen-button:hover, .fa-list-ul:hover {
+    color: #9356DC;
+    }
+
     span {
         background-color: #9356DC;
         padding: 2px 7px;
@@ -60,8 +64,3 @@ padding-left: 1rem;
     color: grey;
 }
 
-.choix-restaurant .fa-store:hover,
-.choix-restaurant .fa-mobile-screen-button:hover,
-.choix-restaurant .fa-list-ul:hover {
-    color: #9356DC;
-}
