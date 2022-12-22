@@ -340,4 +340,7 @@ h3 {
     display: flex;
     justify-content: center;
   }
+  .footer {
+    height: 20rem;
+  }
 }
