@@ -185,7 +185,7 @@ body {
   position: relative;
 }
 .choix-restaurant:hover {
-  background-color: #fff;
+  background-color: #f0dfed;
   box-shadow: 3px 7px 5px rgb(158, 160, 155);
 }
 .choix-restaurant span {
