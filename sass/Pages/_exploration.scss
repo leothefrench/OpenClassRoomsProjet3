@@ -26,7 +26,7 @@
     }
 
     &__button {
-        background: linear-gradient(170deg, #99E2D0, #FF79DA, #9356DC);
+        background: linear-gradient(170deg, #e571da, #a15bdc);
         border-radius: 50px;
         margin: 0rem 5rem 3.5rem;
         color: #fff;
@@ -37,7 +37,7 @@
         padding: 1.09rem 1.3rem;
 
             &:hover {
-                background: linear-gradient(170deg, #99E2D0, #ff79da, #b8a2d2);
+                background: linear-gradient(170deg, #ff79da, #b8a2d2);
                 box-shadow: 0.1rem 0.35rem #c3c6be;
             }
     }

@@ -131,7 +131,7 @@ body {
   justify-content: center;
 }
 .exploration__button {
-  background: linear-gradient(170deg, #99E2D0, #FF79DA, #9356DC);
+  background: linear-gradient(170deg, #e571da, #a15bdc);
   border-radius: 50px;
   margin: 0rem 5rem 3.5rem;
   color: #fff;
@@ -142,7 +142,7 @@ body {
   padding: 1.09rem 1.3rem;
 }
 .exploration__button:hover {
-  background: linear-gradient(170deg, #99E2D0, #ff79da, #b8a2d2);
+  background: linear-gradient(170deg, #ff79da, #b8a2d2);
   box-shadow: 0.1rem 0.35rem #c3c6be;
 }
 
@@ -268,10 +268,10 @@ h3 {
   position: absolute;
   right: 0.9rem;
   top: 0rem;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   text-align: center;
   z-index: 1;
-  color: rgba(61, 70, 48, 0.5098039216);
+  color: #008766;
   font-weight: 700;
   width: 5rem;
   height: 1.5rem;

@@ -16,7 +16,8 @@ body {
 }
 .header img {
   height: 1.8rem;
-  margin: 1rem 4rem;
+  margin: 1rem 3.5rem;
+  padding-right: 3rem;
 }
 .header a {
   padding-left: 1.8rem;
@@ -164,7 +165,7 @@ h3 {
 
 /* CHECK RESTAURANT */
 .choix-restaurent__check {
-  background-color: rgb(154, 220, 154);
+  background-color: #99e2d0;
   width: 3.5rem;
   border-radius: 0px 10px 10px 0px;
   text-align: center;
@@ -174,9 +175,14 @@ h3 {
   transition: all 500ms;
   flex: 0%;
 }
+.choix-restaurent__check:hover > .fa-circle-check {
+  transform: rotate(0deg);
+}
 .choix-restaurent__check .fa-circle-check {
   font-size: 1.2rem;
   color: white;
+  transform: rotate(359deg);
+  transition: transform 700ms;
 }
 
 .footer {
