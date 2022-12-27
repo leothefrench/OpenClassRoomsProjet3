@@ -153,10 +153,16 @@ body {
   background-color: rgb(236, 233, 233);
   border-top: 3px solid #cecece;
 }
-.location p {
-  font-weight: 700;
-  color: #534f4f;
+.location #location {
   margin: 0.95rem 1rem;
+  font-weight: 700;
+  color: #4f4a4a;
+  background-color: rgb(236, 233, 233);
+  border: none;
+  font-size: 0.85rem;
+}
+.location .label-location {
+  margin-left: 4.5rem;
 }
 
 .location .fa-solid {
