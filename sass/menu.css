@@ -175,10 +175,12 @@ h3 {
   transition: all 500ms;
   flex: 0%;
 }
-.choix-restaurent__check:hover > .fa-circle-check {
+
+.card:hover .fa-circle-check {
   transform: rotate(0deg);
 }
-.choix-restaurent__check .fa-circle-check {
+
+.fa-circle-check {
   font-size: 1.2rem;
   color: white;
   transform: rotate(359deg);

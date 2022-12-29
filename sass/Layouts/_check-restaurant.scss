@@ -9,15 +9,15 @@
     transform: translateX(100px);
     transition: all 500ms;
     flex: 0%;
-
-        &:hover>.fa-circle-check {
-            transform: rotate(0deg);
-        }
-
-    .fa-circle-check {
-        font-size: 1.2rem;
-        color: white;
-        transform: rotate(359deg);
-        transition: transform 700ms;
-    }
 }
+
+.card:hover .fa-circle-check {
+    transform: rotate(0deg);
+}
+
+        .fa-circle-check {
+            font-size: 1.2rem;
+            color: white;
+            transform: rotate(359deg);
+            transition: transform 700ms;
+        }
